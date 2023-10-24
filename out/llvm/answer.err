@@ -1,0 +1,8 @@
+./generation/testfile.c:35:10: warning: implicit declaration of function 'getint' is invalid in C99 [-Wimplicit-function-declaration]
+        total = getint();
+                ^
+./generation/testfile.c:57:13: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+                if (a[i]) printf("%d %d\n", i, (i % 2) * reflect1[i % 16]
+                          ^
+./generation/testfile.c:57:13: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings generated.

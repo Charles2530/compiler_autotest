@@ -1,0 +1,23 @@
+.data
+s_0: .asciiz "1"
+
+
+
+.text
+
+# jump to main function
+jal main
+j end
+main:
+main_block_label_0:
+
+# call void @putstr(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @s_0, i64 0, i64 0))
+la $a0, s_0
+li $v0 4
+syscall
+
+# ret i32 0
+li $v0 0
+jr $ra
+end:
+
