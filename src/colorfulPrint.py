@@ -9,6 +9,7 @@ class ColorfulPrint():
     COLOR_PINK = 5
     COLOR_CYAN = 6
     COLOR_WHITE = 7
+
     @staticmethod
     def colorfulPrint(msg, mode, color):
         head = '\033['

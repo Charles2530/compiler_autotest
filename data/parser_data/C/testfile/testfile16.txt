@@ -48,9 +48,9 @@ int main() {
             } else {
                 break;
             }
-	    flag = getint();
+            flag = 1;
             if (flag == 0) {
-		x1 = getint();
+                x1 = 1;
                 temp = double2(x1) % 1;
                 printf("%d ", temp);
                 temp = double2(x1) / +1;
@@ -58,14 +58,14 @@ int main() {
                 continue;
             }
             if (flag > 0) {
-		x1 = getint();
-		x2 = getint();
+                x1 = 1;
+                x2 = 1;
                 printf("%d\n", add(x1, x2));
                 continue;
             }
             if (flag < 0) {
-		x1 = getint();
-		x2 = getint();
+                x1 = 1;
+                x2 = 1;
                 printf("%d\n", sub(x1, x2));
                 continue;
             }
