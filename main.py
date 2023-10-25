@@ -31,14 +31,15 @@ if len(sys.argv) > 1:
                     if file.startswith("testfile") and file.endswith(".txt"):
                         inputfile = file.replace("testfile", "input")
                         path = os.path.join(root, file)
+                        inputpath = os.path.join(root, inputfile)
                         if inputfile in files:
-                            os.system("cat ./data/"+inputfile+" > ./input.txt")
+                            os.system("cat "+inputpath+" > ./input.txt")
                         ColorfulPrint.colorfulPrint("===== Test "+path+" =====", ColorfulPrint.MODE_BOLD, ColorfulPrint.COLOR_PINK)
                         os.system("cat "+path+" > ./testfile.txt")
                         os.system("python3 ./src/generate.py "+sys.argv[2])  
                         os.system("python3 ./src/check.py "+sys.argv[2])
     elif sys.argv[1] == "--version":
-        print("Version: 1.0.0")
+        print("Version: 1.0.1")
     elif sys.argv[1] == "--help":
         print("Usage: python3 main.py [option]")
         print("Options:")

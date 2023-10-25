@@ -27,9 +27,10 @@ elif len(sys.argv) > 1 and sys.argv[1] == "--mips":
     os.system("llvm-link ./out/mips/lib.ll ./out/mips/origin.ll -S -o ./out/mips/answer.ll 2>> ./out/mips/answer.err")
     os.system("lli ./out/mips/answer.ll < ./input.txt > ./out/mips/answer.out ; echo $? > ./out/mips/answer_return.out")
     # for testfile
+    os.system("rm ./out/mips/testfile.out ./out/mips/testfile_return.out ")
     os.system("java -jar ./generation/compiler_project.jar ")
     os.system("cat ./mips.txt > ./out/mips/mips.txt")
-    os.system("java -jar generation/mars.jar out/mips/mips.txt input.txt  nc > ./out/mips/testfile.out; echo $? > ./out/mips/testfile_return.out")
+    os.system("java -jar generation/mars.jar out/mips/mips.txt nc < input.txt 1> ./out/mips/testfile.out 2> ./out/mips/testfile.err; echo $? > ./out/mips/testfile_return.out")
     os.system("cat ./InstructionStatistics.txt > ./out/mips/InstructionStatistics.txt")
     # clean
     os.system("rm ./mips.txt ./llvm_ir.txt ./out/mips/lib.ll ./out/mips/origin.ll ./InstructionStatistics.txt")
