@@ -27,10 +27,9 @@ Liveness Analysis:
           Out: 
           Use: 
           Def: 
-              call void @putstr(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @s_0, i64 0, i64 0))
 
 
 
 
-Register Value Reflection:
-      PutStrDeclare ==> $t0
+Function: @main
+  Register Value Reflection:

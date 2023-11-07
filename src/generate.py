@@ -26,10 +26,10 @@ elif len(sys.argv) > 1 and sys.argv[1] == "--mips":
     # init
     os.system("cat ./testfile.txt > ./generation/testfile.c")
     os.system(CLANG_COMPILE_PREFIX +
-              "./generation/libsysy/libsysy.c -o ./out/mips/lib.ll -O2 2> ./out/mips/answer.err")
+              "./generation/libsysy/libsysy.c -o ./out/mips/lib.ll -O0 2> ./out/mips/answer.err")
     # for answer
     os.system(CLANG_COMPILE_PREFIX +
-              "./generation/testfile.c -o ./out/mips/origin.ll -O2 2>> ./out/mips/answer.err")
+              "./generation/testfile.c -o ./out/mips/origin.ll -O0 2>> ./out/mips/answer.err")
     os.system("llvm-link ./out/mips/lib.ll ./out/mips/origin.ll -S -o ./out/mips/linked.ll 2>> ./out/mips/answer.err")
     os.system("opt -O2 -mem2reg -inline -adce -gvn ./out/mips/linked.ll -S -o ./out/mips/answer.ll 2>> ./out/mips/answer.err")
     os.system("lli ./out/mips/answer.ll < ./input.txt > ./out/mips/answer.out ; echo $? > ./out/mips/answer_return.out")
