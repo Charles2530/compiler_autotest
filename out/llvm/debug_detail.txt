@@ -1,0 +1,36 @@
+Control Flow Graph:
+  Function: @main
+      BasicBlock: main_block_label_0
+          Ind: 
+          Out: 
+
+
+
+
+Dominate Tree:
+  Function: @main
+      BasicBlock: main_block_label_0
+          Dominate: 
+              main_block_label_0
+          Dominance Frontier: 
+          Parent: 
+              null
+          Child List: 
+
+
+
+
+Liveness Analysis:
+  Function: @main
+      BasicBlock: main_block_label_0
+          In: 
+          Out: 
+          Use: 
+          Def: 
+              call void @putstr(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @s_0, i64 0, i64 0))
+
+
+
+
+Register Value Reflection:
+      PutStrDeclare ==> $t0

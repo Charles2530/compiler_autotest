@@ -43,7 +43,7 @@ if len(sys.argv) > 1:
                         os.system("python3 ./src/generate.py "+sys.argv[2])
                         os.system("python3 ./src/check.py "+sys.argv[2])
     elif sys.argv[1] == "--version":
-        print("Version: 1.0.2")
+        print("Version: 1.0.3")
     elif sys.argv[1] == "--help":
         print("Usage: python3 main.py [option]")
         print("Options:")
