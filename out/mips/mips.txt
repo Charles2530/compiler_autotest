@@ -5,7 +5,7 @@ s_0: .asciiz "Hello World"
 
 .text
 
-# jump to main function
+# Jump to main Function
 jal main
 j end
 main:

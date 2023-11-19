@@ -6,7 +6,7 @@ int az;
 int aza = 100;
 int azaz1, azaz2 = 200;
 
-// All Block's forms exist in while() in func1, except for (return exp)
+// All Block's forms exist infor(;) in func1, except for (return exp)
 void func1() {
     for (;1;) {
         int i = 0;

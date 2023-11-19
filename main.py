@@ -2,6 +2,7 @@ import os
 import sys
 from src.colorfulPrint import ColorfulPrint
 Data_path_prefix = "./data/"
+Version = "1.0.5"
 if len(sys.argv) > 1:
     if sys.argv[1] == "--llvm":
         ColorfulPrint.colorfulPrint(
@@ -62,7 +63,7 @@ if len(sys.argv) > 1:
                         os.system("python3 ./src/generate.py "+sys.argv[2])
                         os.system("python3 ./src/check.py "+sys.argv[2])
     elif sys.argv[1] == "--version":
-        print("Version: 1.0.4")
+        print("Version: " + Version)
     elif sys.argv[1] == "--help":
         print("Usage: python3 main.py [option]")
         print("Options:")

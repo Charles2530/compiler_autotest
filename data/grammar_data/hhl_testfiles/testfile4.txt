@@ -15,10 +15,10 @@ int main() {
     const int ci0=1;
     const int ci1=10,ci2=20*2/ci0-ci0+ci0;
     int Aa_0=-+-1, Aa_2=0, sc;
-    sc=getint();
+    sc=10;
     int Aa_1=Aa_0+sc-(0+3*Aa_0)*sc+Aa_0*sc/1*1%4+(1)+(Aa_0+1)*2+ci2;
     printf("2: !()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-    printf("3: []^_'abcdefghijklmnopqrstuvwxyz{|}~\n");
+    printf("3: []^_`abcdefghijklmnopqrstuvwxyz{|}~\n");
     printf("4:%d\n",Aa_1);
     if (Aa_1>=0) Aa_2=0;
     else {

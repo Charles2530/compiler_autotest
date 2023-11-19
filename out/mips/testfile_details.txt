@@ -1,3 +1,4 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Control Flow Graph:
   Function: @main
       BasicBlock: main_block_label_0
@@ -7,6 +8,7 @@ Control Flow Graph:
 
 
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Dominate Tree:
   Function: @main
       BasicBlock: main_block_label_0
@@ -16,10 +18,13 @@ Dominate Tree:
           Parent: 
               null
           Child List: 
+          Depth: 
+              0
 
 
 
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Liveness Analysis:
   Function: @main
       BasicBlock: main_block_label_0
@@ -31,5 +36,124 @@ Liveness Analysis:
 
 
 
-Function: @main
-  Register Value Reflection:
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Inline Function Result:
+  Iterations: 1
+declare i32 @getint() 
+declare void @putint(i32)
+declare void @putch(i32)
+declare void @putstr(i8*)
+
+@s_0 = constant [12 x i8] c"Hello World\00"
+
+
+define dso_local i32 @main() {
+
+main_block_label_0:
+	call void @putstr(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @s_0, i64 0, i64 0))
+	ret i32 0
+}
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Global Variable Numbering:
+  Function: @main
+      Global Variable Numbering:
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Liveness Analysis:
+  Function: @main
+      BasicBlock: main_block_label_0
+          In: 
+          Out: 
+          Use: 
+          Def: 
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Dominate Tree:
+  Function: @main
+      BasicBlock: main_block_label_0
+          Dominate: 
+              main_block_label_0
+          Dominance Frontier: 
+          Parent: 
+              null
+          Child List: 
+          Depth: 
+              0
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Loop Analysis Detail:
+  Function: @main
+After Loop Review
+  Function: @main
+      BasicBlock: main_block_label_0's depth is 0
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Side Effect Analysis:
+  Function: @main
+      Side Effect: true
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Global Code Movement Path:
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Control Flow Graph:
+  Function: @main
+      BasicBlock: main_block_label_0
+          Ind: 
+          Out: 
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Dominate Tree:
+  Function: @main
+      BasicBlock: main_block_label_0
+          Dominate: 
+              main_block_label_0
+          Dominance Frontier: 
+          Parent: 
+              null
+          Child List: 
+          Depth: 
+              0
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Liveness Analysis:
+  Function: @main
+      BasicBlock: main_block_label_0
+          In: 
+          Out: 
+          Use: 
+          Def: 
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Register Value Reflection:
+  Function: @main
+      Register Value Reflection:
